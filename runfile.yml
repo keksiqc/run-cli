@@ -1,0 +1,7 @@
+scripts:
+  test: "python test.py"
+  lint: "poetry run black ."
+  publish:
+    - "run lint"
+    - "poetry build"
+    - "poetry publish"
