@@ -1,6 +1,5 @@
 import os
 import shlex
-import signal
 import sys
 from threading import Thread
 
@@ -33,15 +32,15 @@ class Listener:
 
     def run_loop_script(self, script: str | list):
         if type(script) is str:
-            self.line(f"[run] " + __version__, style="yellow")
-            self.line(f"[run] to restart at any time, enter `rs`", style="yellow")
-            self.line(f"[run] to exit, enter `exit`", style="yellow")
+            self.line("[run] " + __version__, style="yellow")
+            self.line("[run] to restart at any time, enter `rs`", style="yellow")
+            self.line("[run] to exit, enter `exit`", style="yellow")
             self.line(f"[run] running `{script}`", style="green")
             os.system(script)
         else:
-            self.line(f"[run] " + __version__, style="yellow")
-            self.line(f"[run] to restart at any time, enter `rs`", style="yellow")
-            self.line(f"[run] to exit, enter `exit`", style="yellow")
+            self.line("[run] " + __version__, style="yellow")
+            self.line("[run] to restart at any time, enter `rs`", style="yellow")
+            self.line("[run] to exit, enter `exit`", style="yellow")
             for cmd in script:
                 self.line(f"[run] running `{cmd}`", style="green")
                 os.system(cmd)
@@ -62,7 +61,7 @@ class Listener:
             try:
                 input = self.get_arguments()
                 self.invoke_command(input[0])
-            except:
+            except Exception:
                 pass
 
     def start(self):

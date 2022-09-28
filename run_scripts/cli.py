@@ -1,9 +1,5 @@
-import os
-
 import click
-import yaml
 
-from run_scripts import __version__
 from run_scripts.commands.init import InitCommand
 from run_scripts.commands.run import RunCommand
 from run_scripts.group import RunGroup
