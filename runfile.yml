@@ -2,7 +2,7 @@ scripts:
   test: "python test.py"
   lint: 
     - "poetry run black ."
-    - "poetry run flake8  --extend-ignore E501 ."
+    - "poetry run flake8 --extend-ignore E501 ."
   publish:
     - "run lint"
     - "poetry build"

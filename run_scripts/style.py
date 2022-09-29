@@ -16,5 +16,6 @@ style = {
     "bright magenta": "\x1b[35;1m",
     "bright cyan": "\x1b[36;1m",
     "bright white": "\x1b[37;1m",
+    "dim": "\x1b[2m",
     "reset": "\x1b[0m",
 }

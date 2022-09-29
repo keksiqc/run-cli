@@ -24,6 +24,6 @@ run [script]
 scripts:
     lint: "poetry run black ."
     build: 
-        - "docker build -t image ."
         - "run lint"
+        - "docker build -t image ."
 ```
