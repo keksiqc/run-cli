@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "run-scripts"
-version = "0.1.1"
+version = "0.1.2"
 description = "A CLI for running npm-like scripts"
 authors = ["Keksi <contact@keksi.me>"]
 repository = "https://github.com/keksiqc/run-cli"
